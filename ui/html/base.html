@@ -1,0 +1,16 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{template "title" .}} - Groupie Tracker</title>
+    <link rel="stylesheet" href='{{template "csspath" .}}'>
+</head>
+<body>
+    <header>
+      <h1><a href="/">Groupie-Tracker</a></h1>
+    </header>
+    <main>{{template "main" .}}</main>
+</body>
+</html>
+{{end}}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Error Page</title>
+    <link rel="stylesheet" href="../ui/static/errstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Whoops!</h1>
+      <p class="message">{{ .ErrorCode }} {{ .ErrorMsg }}</p>
+      <img src="../ui/img/sorry_kitten.jpeg" />
+
+      <p class="mem">Sorry, error occured.</p>
+
+      <p>Try our <a href="/ui/static">homepage</a> instead.</p>
+    </div>
+  </body>
+</html>

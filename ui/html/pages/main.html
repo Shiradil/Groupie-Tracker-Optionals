@@ -1,0 +1,18 @@
+{{define "title"}}Main page{{end}}
+{{define "csspath"}}/static/main.css{{end}}
+{{define "main"}}
+<div class="main-content">
+
+    <h3>Bands we love</h3>
+    <div class="band-container">
+        {{ range . }}
+        <div class="band-card">
+            <a href="/artists/{{ .ID }}">
+                <img src="{{ .Image }}" alt="groupimg">
+                <p>{{ .Name }} </p>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{end}}

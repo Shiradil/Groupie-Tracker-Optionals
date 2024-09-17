@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Groupie-Tracker-Optionals.iml" filepath="$PROJECT_DIR$/.idea/Groupie-Tracker-Optionals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/groupie-tracker.iml" filepath="$PROJECT_DIR$/.idea/groupie-tracker.iml" />
     </modules>
   </component>
 </project>

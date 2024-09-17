@@ -1,0 +1,50 @@
+{{define "title"}}Main page{{end}}
+{{define "csspath"}}/static/artist.css{{end}}
+{{define "main"}}
+<header>
+    <h2>
+        {{.Name}}
+    </h2>
+        <p>Creation date: {{.CreationDate}}</p>
+</header>
+<div class="main-content">
+    <img class="artimg" src="{{.Image}}"  alt="{{.Name}}">
+    <div class="info">
+        <p>First album release date: <strong>{{.FirstAlbum}}</strong> </p>
+    </div>
+</div>
+<div class="main-content-body">
+    <div class="content-item">
+        <div class="header-info">
+            <h3>
+                Members
+            </h3>
+        </div>
+        <div class="members-container">
+            {{range .Members}}
+            <p>{{.}}</p>
+            {{end}}
+        </div>
+    </div>
+    <div class="content-item">
+        <div class="header-info">
+            <h3>
+                Concerts
+            </h3>
+        </div>
+        <div class="members-container">
+            <ul class="location_list">
+                {{range $key, $value := .Relations.DatesLocations}}
+                <li><strong>{{$key}}:</strong>
+                    <ul>
+                        {{range $val := $value}}
+                        <li>{{$val}}</li>
+                        {{end}}
+                    </ul>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+    </div>
+</div>
+{{end}}
